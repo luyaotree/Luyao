@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Luyao.iml" filepath="$PROJECT_DIR$/Luyao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_aspectj/module_aspectj.iml" filepath="$PROJECT_DIR$/module_aspectj/module_aspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multidex/multidex.iml" filepath="$PROJECT_DIR$/multidex/multidex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
+    </modules>
+  </component>
+</project>

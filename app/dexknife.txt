@@ -1,0 +1,4 @@
+#-suggest-split com.luyao.base.*
+#-keep com.luyao.base.*
+-suggest-split com.luyao.base.MainActivity
+-suggest-split com.douyu.app.user.multidex.*

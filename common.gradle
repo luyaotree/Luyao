@@ -1,0 +1,52 @@
+ext {
+
+    android = [
+            buildToolsVersion: "25.0.0",
+            minSdkVersion    : 18,
+            targetSdkVersion : 23,
+            compileSdkVersion: 25,
+    ]
+
+    //第三方依赖包
+    deps = [
+            //-----组-----
+            androidSupport     : "com.android.support:support-v4:24.2.1",
+            androidAppcompat   : "com.android.support:appcompat-v7:24.2.1",
+            recyclerview       : "com.android.support:recyclerview-v7:24.2.1",
+            design             : "com.android.support:design:24.2.1",
+            cardview           : "com.android.support:cardview-v7:24.2.1",
+            //^^^^^组^^^^^
+            transition         : "com.android.support:transition:24.2.1",
+
+            //-----组-----
+            okhttp             : "com.squareup.okhttp3:okhttp:3.9.0",
+            okhttpLog          : "com.squareup.okhttp3:logging-interceptor:3.9.0",
+            //^^^^^组^^^^^
+
+            //-----组-----
+            retrofit           : "com.squareup.retrofit2:retrofit:2.1.0",
+            retrofitRxjava     : "com.squareup.retrofit2:adapter-rxjava:2.1.0",
+            //^^^^^组^^^^^
+
+            //-----组-----
+            fresco             : "com.facebook.fresco:fresco:0.14.1",
+            frescookhttp       : "com.facebook.fresco:imagepipeline-okhttp3:0.14.1",
+            //^^^^^组^^^^^
+            //Google
+            interactivemedia   : "com.google.ads.interactivemedia.v3:interactivemedia:3.8.2",
+            playServicesAds    : "com.google.android.gms:play-services-ads:11.0.4",
+
+            constraintLayout   : "com.android.support.constraint:constraint-layout:1.0.2",
+            junit              : "junit:junit:4.12",
+            espressoCore       : "com.android.support.test.espresso:espresso-core:2.2.2",
+            utils              : "com.ihongqiqu:android-utils:1.0.2",
+            fastjson           : "com.alibaba:fastjson:1.2.30",
+            rxjava             : "io.reactivex:rxjava:1.1.6",
+            rxandroid          : "io.reactivex:rxandroid:1.2.1",
+            gson               : "com.google.code.gson:gson:2.7",
+            butterknife        : "com.jakewharton:butterknife:8.2.1",   //全部模块化后删除
+            butterknifecompiler: "com.jakewharton:butterknife-compiler:8.2.1", //全部模块化后删除
+            evenbus            : "de.greenrobot:eventbus:2.4.0",
+    ]
+
+}
