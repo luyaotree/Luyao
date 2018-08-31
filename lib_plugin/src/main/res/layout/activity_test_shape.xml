@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    tools:context=".TestFresUseAc">
+
+    <com.shapeimg.ShapeImageView
+        android:id="@+id/img1"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        custom:sivShape="Circle"
+        android:src="@drawable/bg_dialog_tcremind"
+        custom:sivBorderColor="@color/colorAccent"
+        custom:sivBorderWidth="2dp"
+        custom:sivWidthScale="1"
+        custom:sivScaleTarget="height"
+        custom:isCircle="true"/>
+
+    <com.shapeimg.ShapeImageView
+        android:id="@+id/img2"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_dialog_tcremind"
+        custom:O_round_radius="20dp"/>
+
+</LinearLayout>

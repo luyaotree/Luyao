@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BitmapOnlyRoundView">
+        <attr name="isCircle" format="boolean"/>
+        <attr name="round_radius" format="dimension"/>
+        <attr name="top_left_radius" format="dimension"/>
+        <attr name="top_right_radius" format="dimension"/>
+        <attr name="bottom_left_radius" format="dimension"/>
+        <attr name="bottom_right_radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="OverLayRoundView">
+        <attr name="O_isCircle" format="boolean"/>
+        <attr name="O_overlay_color" format="color"/>
+        <attr name="O_round_radius" format="dimension"/>
+        <attr name="O_top_left_radius" format="dimension"/>
+        <attr name="O_top_right_radius" format="dimension"/>
+        <attr name="O_bottom_left_radius" format="dimension"/>
+        <attr name="O_bottom_right_radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="RoundRelativeLayout">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <attr name="borderRadius" format="dimension" />
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="round" value="1" />
+    </attr>
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ShapeImageView">
+        <attr name="sivShape" format="enum">
+            <enum name="Circle" value="1" />
+            <enum name="RoundRect" value="2" />
+        </attr>
+        <attr name="sivRoundRectRadius" format="dimension" />
+        <attr name="sivBorderWidth" format="dimension" />
+        <attr name="sivBorderColor" format="color" />
+        <attr name="sivForeground" format="reference"/>
+        <attr name="sivWidthScale" format="integer"/>
+        <attr name="sivHeightScale" format="integer"/>
+        <attr name="sivScaleTarget" format="enum">
+            <enum name="height" value="0"/>
+            <enum name="width" value="1"/>
+            <enum name="expand" value="2"/>
+            <enum name="inside" value="3"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

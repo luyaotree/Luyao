@@ -20,6 +20,12 @@
         <activity android:name="com.luyao.aop.aspectj.AspectJActivity"></activity>
         <activity android:name="com.example.aspectj.AspaectJActivity"></activity>
 
+        <activity android:name="com.douyu.app.user.plugin.TestFresUseAc">
+
+        </activity>
+        <activity android:name="com.shapeimg.TestShapeAc">
+
+        </activity>
 
     </application>
 

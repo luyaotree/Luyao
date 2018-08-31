@@ -9,9 +9,13 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/module_aspectj" />
-            <option value="$PROJECT_DIR$/multidex" />
-            <option value="$PROJECT_DIR$/permission" />
+            <option value="$PROJECT_DIR$/lib_constraintlayout" />
+            <option value="$PROJECT_DIR$/lib_design" />
+            <option value="$PROJECT_DIR$/lib_listAverage" />
+            <option value="$PROJECT_DIR$/lib_module_aspectj" />
+            <option value="$PROJECT_DIR$/lib_multidex" />
+            <option value="$PROJECT_DIR$/lib_plugin" />
+            <option value="$PROJECT_DIR$/lib_view" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -4,6 +4,8 @@ import android.view.View;
 
 
 import com.luyao.aop.aspectj.AspectJActivity;
+import com.luyao.constraintLayout.ConstraintLayoutActivity;
+import com.luyao.view.ViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,6 +36,18 @@ public class MainActivity extends RvActivity {
             @Override
             public void onClick(View v) {
 //                launch(PermissionA.class, "AspectJ");
+            }
+        }));
+        data.add(new MenuModel("自定义view", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launch(ViewActivity.class, "AspectJ");
+            }
+        }));
+        data.add(new MenuModel("ConstraintLayout使用", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launch(ConstraintLayoutActivity.class, "ConstraintLayout");
             }
         }));
         return data;

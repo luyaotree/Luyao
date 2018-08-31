@@ -4,9 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Luyao.iml" filepath="$PROJECT_DIR$/Luyao.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/module_aspectj/module_aspectj.iml" filepath="$PROJECT_DIR$/module_aspectj/module_aspectj.iml" />
-      <module fileurl="file://$PROJECT_DIR$/multidex/multidex.iml" filepath="$PROJECT_DIR$/multidex/multidex.iml" />
-      <module fileurl="file://$PROJECT_DIR$/permission/permission.iml" filepath="$PROJECT_DIR$/permission/permission.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" filepath="$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_design/lib_design.iml" filepath="$PROJECT_DIR$/lib_design/lib_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_listAverage/lib_listAverage.iml" filepath="$PROJECT_DIR$/lib_listAverage/lib_listAverage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_module_aspectj/lib_module_aspectj.iml" filepath="$PROJECT_DIR$/lib_module_aspectj/lib_module_aspectj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_multidex/lib_multidex.iml" filepath="$PROJECT_DIR$/lib_multidex/lib_multidex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_plugin/lib_plugin.iml" filepath="$PROJECT_DIR$/lib_plugin/lib_plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_view/lib_view.iml" filepath="$PROJECT_DIR$/lib_view/lib_view.iml" />
     </modules>
   </component>
 </project>

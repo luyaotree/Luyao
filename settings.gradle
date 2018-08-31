@@ -1,1 +1,1 @@
-include ':app', ':module_aspectj', ':multidex', ':permission'
+include ':app', ':lib_module_aspectj', ':lib_multidex', ':lib_plugin', ':lib_view', ':lib_listAverage', ':lib_constraintlayout', 'lib_design'

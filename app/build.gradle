@@ -106,11 +106,15 @@ configurations.all {
 
 
 dependencies {
-    compile project(':module_aspectj')
-    compile project(':multidex')
-    compile project(':permission')
+    compile project(':lib_module_aspectj')
+    compile project(':lib_multidex')
+    compile project(':lib_plugin')
+    compile project(':lib_view')
+    compile project(':lib_constraintlayout')
     compile rootProject.ext.deps.androidAppcompat
     compile rootProject.ext.deps.recyclerview
+    compile 'com.android.support.constraint:constraint-layout:1.1.2'
+
 //    compile fileTree(dir: 'libs', include: ['*.jar'])
 //    compile files('libs/aspectjrt.jar')
 //    compile 'org.aspectj:aspectjtools:1.8.9'
