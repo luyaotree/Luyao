@@ -17,6 +17,7 @@ android/support/v4/view/MenuCompat.class
 android/support/v4/view/ViewCompat$JbMr1ViewCompatImpl.class
 android/support/v4/media/session/MediaControllerCompat.class
 org/aspectj/lang/annotation/SuppressAjWarnings.class
+com/luyao/base/App$1.class
 org/aspectj/lang/annotation/AfterThrowing.class
 android/support/annotation/IdRes.class
 android/support/v7/app/AppCompatDelegateImplBase.class
@@ -212,6 +213,7 @@ android/support/v4/app/Fragment.class
 android/support/annotation/XmlRes.class
 android/support/v4/media/VolumeProviderCompat$ControlType.class
 com/luyao/aop/aspectj/MethodAspect.class
+com/luyao/webview/web/WorkManager.class
 android/support/annotation/AnyRes.class
 android/support/v4/view/ViewCompat$BaseViewCompatImpl.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase.class
@@ -292,6 +294,7 @@ android/support/v4/util/ContainerHelpers.class
 android/support/multidex/MultiDex$V14.class
 android/support/v7/widget/RecyclerView$Adapter.class
 android/support/annotation/NonNull.class
+com/luyao/webview/web/RemoteJsInterface.class
 android/support/v7/widget/RecyclerView$LayoutManager.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImpl.class
 android/support/v7/widget/RecyclerView$5.class

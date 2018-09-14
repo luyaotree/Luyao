@@ -111,6 +111,7 @@ dependencies {
     compile project(':lib_plugin')
     compile project(':lib_view')
     compile project(':lib_constraintlayout')
+    compile project(':lib_h5')
     compile rootProject.ext.deps.androidAppcompat
     compile rootProject.ext.deps.recyclerview
     compile 'com.android.support.constraint:constraint-layout:1.1.2'

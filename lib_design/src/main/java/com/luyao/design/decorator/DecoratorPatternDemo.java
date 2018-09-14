@@ -1,7 +1,7 @@
 package com.luyao.design.decorator;
 
 /**
- * 描述：
+ * 描述：参考：http://www.runoob.com/design-pattern/decorator-pattern.html
  *
  * @author luyao
  * @date 2018/8/31

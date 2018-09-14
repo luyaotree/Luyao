@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 
@@ -33,6 +34,7 @@ public class MyView extends View {
         defalutSize = a.getDimensionPixelSize(R.styleable.MyView_default_size, 100);
         //最后记得将TypedArray对象回收
         a.recycle();
+        Log.e("luy", "MyView 构造函数");
     }
 
 
@@ -73,6 +75,14 @@ public class MyView extends View {
         }
 
         setMeasuredDimension(width, height);
+        Log.e("luy", "MyView onMeasure");
+
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.e("luy", "MyView onLayout");
     }
 
     @Override
@@ -91,6 +101,7 @@ public class MyView extends View {
         //开始绘制
         canvas.drawCircle(centerX, centerY, r, paint);
 
+        Log.e("luy", "MyView onDraw");
 
     }
 

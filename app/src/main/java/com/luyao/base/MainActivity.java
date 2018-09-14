@@ -50,6 +50,12 @@ public class MainActivity extends RvActivity {
                 launch(ConstraintLayoutActivity.class, "ConstraintLayout");
             }
         }));
+        data.add(new MenuModel("H5多进程", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                launch(com.luyao.webview.main.MainActivity.class, "H5多进程");
+            }
+        }));
         return data;
     }
 }

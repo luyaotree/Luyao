@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" filepath="$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_design/lib_design.iml" filepath="$PROJECT_DIR$/lib_design/lib_design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_h5/lib_h5.iml" filepath="$PROJECT_DIR$/lib_h5/lib_h5.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_listAverage/lib_listAverage.iml" filepath="$PROJECT_DIR$/lib_listAverage/lib_listAverage.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_module_aspectj/lib_module_aspectj.iml" filepath="$PROJECT_DIR$/lib_module_aspectj/lib_module_aspectj.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_multidex/lib_multidex.iml" filepath="$PROJECT_DIR$/lib_multidex/lib_multidex.iml" />

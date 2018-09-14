@@ -6,6 +6,9 @@ import android.support.multidex.MultiDex;
 
 import com.douyu.app.user.multidex.Bean;
 import com.douyu.app.user.multidex.ProductMethod;
+import com.luyao.webview.main.JsBridge;
+import com.luyao.webview.main.JsNativeInterface;
+import com.luyao.webview.web.WorkManager;
 
 
 /**
@@ -27,6 +30,12 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         app = this;
+        WorkManager.getInstance().postTask(new Runnable() {
+            @Override
+            public void run() {
+                JsBridge.getInstance().register(JsNativeInterface.class);
+            }
+        });
     }
 
     public static App get() {

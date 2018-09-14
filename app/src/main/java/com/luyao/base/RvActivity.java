@@ -8,16 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.douyu.app.user.multidex.MyMethod;
-import com.douyu.app.user.multidex.MyMethod2;
-import com.douyu.app.user.multidex.MyMethod3;
-import com.douyu.app.user.multidex.MyMethod4;
-import com.douyu.app.user.multidex.MyMethod5;
-import com.douyu.app.user.multidex.MyMethod6;
-import com.douyu.app.user.multidex.MyMethod7;
-import com.douyu.app.user.multidex.ProductMethod;
 import com.up.luyao.R;
 
 import java.util.List;

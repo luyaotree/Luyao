@@ -2,7 +2,7 @@ package com.luyao.design.decorator2;
 
 /**
  * 描述：客户端：召唤师
- *
+ * 参考：http://www.runoob.com/design-pattern/decorator-pattern.html
  * @author luyao
  * @date 2018/8/31
  */
