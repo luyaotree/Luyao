@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Luyao.iml" filepath="$PROJECT_DIR$/Luyao.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_aidl/lib_aidl.iml" filepath="$PROJECT_DIR$/lib_aidl/lib_aidl.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" filepath="$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_design/lib_design.iml" filepath="$PROJECT_DIR$/lib_design/lib_design.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_h5/lib_h5.iml" filepath="$PROJECT_DIR$/lib_h5/lib_h5.iml" />

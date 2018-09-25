@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/lib_aidl" />
             <option value="$PROJECT_DIR$/lib_constraintlayout" />
             <option value="$PROJECT_DIR$/lib_design" />
             <option value="$PROJECT_DIR$/lib_h5" />
