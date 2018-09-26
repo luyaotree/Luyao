@@ -3,7 +3,13 @@
     package="com.luyao.runalone">
 
     <application>
-        <activity android:name="com.luyao.runalone.RunAloneActivity"></activity>
+        <activity android:name="com.luyao.runalone.RunAloneActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

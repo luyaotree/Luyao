@@ -1,4 +1,5 @@
-apply plugin: 'com.android.application'
+ext.mainApp = true
+apply from: 'https://raw.githubusercontent.com/luckybilly/CC/master/cc-settings.gradle'
 apply plugin: com.edreamoon.RouterPlu
 //apply plugin: 'com.ceabie.dexnkife'
 
