@@ -1,5 +1,5 @@
 ext.mainApp = true
-apply from: 'https://raw.githubusercontent.com/luckybilly/CC/master/cc-settings.gradle'
+apply from: rootProject.file('cc-settings.gradle')
 apply plugin: com.edreamoon.RouterPlu
 //apply plugin: 'com.ceabie.dexnkife'
 
@@ -115,6 +115,7 @@ dependencies {
     compile project(':lib_constraintlayout')
     compile project(':lib_h5')
     compile project(':lib_aidl')
+    addComponent 'lib_runalone'
     compile rootProject.ext.deps.androidAppcompat
     compile rootProject.ext.deps.recyclerview
     compile 'com.android.support.constraint:constraint-layout:1.1.2'

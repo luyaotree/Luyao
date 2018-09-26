@@ -1,5 +1,4 @@
-apply from: rootProject.file('cc-settings.gradle')
-//apply from: "$rootDir/runAlone.gradle"
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -22,8 +21,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile rootProject.ext.deps.androidAppcompat
-    compile project(':frouter')
+    compile 'pub.devrel:easypermissions:1.0.0'
+    compile project(path: ':frouter')
+
 }
