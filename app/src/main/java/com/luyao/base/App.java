@@ -6,6 +6,7 @@ import android.support.multidex.MultiDex;
 
 import com.douyu.app.user.multidex.Bean;
 import com.douyu.app.user.multidex.ProductMethod;
+import com.edreamoon.router.FRouter;
 import com.luyao.webview.main.JsBridge;
 import com.luyao.webview.main.JsNativeInterface;
 import com.luyao.webview.web.WorkManager;
@@ -24,6 +25,7 @@ public class App extends Application {
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(base);
         MultiDex.install(App.this);
+        FRouter.instance().init(this);
     }
 
     @Override

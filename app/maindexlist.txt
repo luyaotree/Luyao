@@ -10,6 +10,7 @@ android/support/v7/appcompat/R$layout.class
 android/support/v4/view/ViewCompatLollipop.class
 android/support/v4/media/MediaBrowserCompat$MediaItem$1.class
 android/support/v4/widget/CursorAdapter.class
+com/edreamoon/router/FRouter.class
 android/support/v7/widget/RecyclerView$ItemAnimator$ItemAnimatorListener.class
 android/support/v7/widget/RecyclerView$RecyclerListener.class
 android/support/v4/widget/SimpleCursorAdapter.class
@@ -152,6 +153,7 @@ org/aspectj/lang/annotation/DeclarePrecedence.class
 android/support/v4/widget/EdgeEffectCompat.class
 android/support/v4/view/animation/FastOutSlowInInterpolator.class
 android/support/v7/widget/ListPopupWindow.class
+com/edreamoon/router/FRouter$Holder.class
 android/support/v7/view/menu/MenuPresenter$Callback.class
 android/support/v4/widget/MaterialProgressDrawable$Ring.class
 android/support/v4/widget/SlidingPaneLayout.class
@@ -254,6 +256,7 @@ android/support/v7/widget/RecyclerView$OnFlingListener.class
 android/support/v7/graphics/drawable/DrawerArrowDrawable$ArrowDirection.class
 android/support/v4/view/ViewPager$2.class
 android/support/v7/widget/RecyclerView$AdapterDataObserver.class
+com/edreamoon/router/FRouter$1.class
 android/support/v4/media/RatingCompat.class
 android/support/v4/view/accessibility/AccessibilityNodeInfoCompat.class
 android/support/v4/media/session/MediaSessionCompat$SessionFlags.class
@@ -279,6 +282,7 @@ android/support/v4/media/session/PlaybackStateCompat$CustomAction.class
 android/support/v4/view/ViewPager$ViewPositionComparator.class
 android/support/v7/widget/AdapterHelper.class
 android/support/v4/media/MediaBrowserCompat$MediaItem$Flags.class
+com/edreamoon/router/annotation/Router.class
 android/support/multidex/ZipUtil.class
 android/support/v4/media/MediaBrowserCompatApi21.class
 android/support/v7/app/ActionBarActivity.class

@@ -17,8 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.luyao.aop.aspectj.AspectJActivity"></activity>
-        <activity android:name="com.example.aspectj.AspaectJActivity"></activity>
+        <!--<activity android:name="com.luyao.aop.aspectj.AspectJActivity"></activity>-->
+        <!--<activity android:name="com.example.aspectj.AspaectJActivity"></activity>-->
 
         <activity android:name="com.douyu.app.user.plugin.TestFresUseAc">
 

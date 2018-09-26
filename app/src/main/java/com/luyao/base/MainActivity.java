@@ -3,7 +3,7 @@ package com.luyao.base;
 import android.view.View;
 
 
-import com.luyao.aop.aspectj.AspectJActivity;
+import com.edreamoon.router.FRouter;
 import com.luyao.constraintLayout.ConstraintLayoutActivity;
 import com.luyao.view.ViewActivity;
 
@@ -23,7 +23,7 @@ public class MainActivity extends RvActivity {
         data.add(new MenuModel("AspectJ", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                launch(AspectJActivity.class, "AspectJ");
+//                launch(AspectJActivity.class, "AspectJ");
             }
         }));
         data.add(new MenuModel("AspectJ2", new View.OnClickListener() {
@@ -54,6 +54,13 @@ public class MainActivity extends RvActivity {
             @Override
             public void onClick(View v) {
                 launch(com.luyao.webview.main.MainActivity.class, "H5多进程");
+            }
+        }));
+        data.add(new MenuModel("Fouter", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FRouter.instance().start("/RunAloneActivity");
+//                launch(com.luyao.webview.main.MainActivity.class, "H5多进程");
             }
         }));
         return data;

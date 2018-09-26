@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 
+import com.edreamoon.router.annotation.Router;
 
+@Router(path = "/ViewActivity")
 public class ViewActivity extends Activity {
     long start;
     long onCreate;
