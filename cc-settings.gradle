@@ -47,6 +47,7 @@ ext.addComponent = { dependencyName, realDependency = null ->
     def taskNames = project.gradle.startParameter.taskNames
     def regex = "((.*:)?${project.name.toUpperCase()}:)?((ASSEMBLE)|(INSTALL)).*"
     def taskBuildApkPattern = Pattern.compile(regex)
+
     for (String task : taskNames) {
         if (taskBuildApkPattern.matcher(task.toUpperCase()).matches()) {
             curModuleIsBuildingApk = true
@@ -115,6 +116,7 @@ android {
                 }
             }
             // 注：2018-03-12推荐：将组件单独以app运行时的测试代码及资源放到src/main/debug/目录下
+            println("runAsApp:::" + runAsApp +"," + project.name)
             if (runAsApp) {
                 //debug模式下，如果存在src/main/debug/assets，则自动将其添加到assets源码目录
                 if (project.file('src/main/debug/assets').exists()) {
@@ -157,32 +159,3 @@ project.dependencies.add(dependencyMode, "com.billy.android:cc:1.1.0")
     register(new CategoryB()); //scanSuperClass的子类
   }
  */
-project.apply plugin: 'auto-register'
-project.ext.registerInfoList = [
-    [ //自动注册组件
-        'scanInterface'             : 'com.billy.cc.core.component.IComponent'
-        , 'codeInsertToClassName'   : 'com.billy.cc.core.component.ComponentManager'
-        , 'registerMethodName'      : 'registerComponent'
-        , 'exclude'                 : [//排除的类，支持正则表达式（包分隔符需要用/表示，不能用.）
-            'com.billy.cc.core.component.'.replaceAll("\\.", "/") + ".*"
-        ]
-    ],[//自动注册全局拦截器
-        'scanInterface'             : 'com.billy.cc.core.component.IGlobalCCInterceptor'
-        , 'codeInsertToClassName'   : 'com.billy.cc.core.component.GlobalCCInterceptorManager'
-        , 'registerMethodName'      : 'registerGlobalInterceptor'
-        , 'exclude'                 : [//排除的类，支持正则表达式（包分隔符需要用/表示，不能用.）
-            'com.billy.cc.core.component.'.replaceAll("\\.", "/") + ".*"
-        ]
-    ],[//自动注册跨进程通信时自定义类型的json转换器，可以用Gson、FastJson等工具来实现
-       // 参考： demo_base/src/main/java/com.billy.cc.demo.base.GsonParamConverter
-        'scanInterface'             : 'com.billy.cc.core.component.IParamJsonConverter'
-        , 'codeInsertToClassName'   : 'com.billy.cc.core.component.RemoteParamUtil'
-        , 'registerMethodName'      : 'initRemoteCCParamJsonConverter'
-        , 'exclude'                 : [//排除的类，支持正则表达式（包分隔符需要用/表示，不能用.）
-            'com.billy.cc.core.component.'.replaceAll("\\.", "/") + ".*"
-        ]
-    ]
-]
-autoregister {
-    registerInfo = registerInfoList
-}

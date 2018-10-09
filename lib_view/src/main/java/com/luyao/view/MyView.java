@@ -4,10 +4,16 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Outline;
 import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.RectF;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewOutlineProvider;
 
 
 /**
@@ -17,13 +23,14 @@ import android.view.View;
  * @date 2018/7/5
  */
 public class MyView extends View {
-
+    private int RADIUS = 20;
     private int defalutSize;
 
     public MyView(Context context) {
         super(context);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public MyView(Context context, AttributeSet attrs) {
         super(context, attrs);
         //第二个参数就是我们在styles.xml文件中的<declare-styleable>标签
@@ -35,6 +42,38 @@ public class MyView extends View {
         //最后记得将TypedArray对象回收
         a.recycle();
         Log.e("luy", "MyView 构造函数");
+
+        setElevation(150);
+        setOutlineProvider();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    private void setOutlineProvider() {
+        setOutlineProvider(new ViewOutlineProvider() {
+            @Override
+            public void getOutline(View view, Outline outline) {
+                Path path = new Path();
+                float radii[] = {10, 15, 20, 25, 30, 35, 40, 45};
+                RectF tRectF = new RectF();
+                tRectF.set(0, 0, getMeasuredWidth(), getMeasuredHeight());
+                path.addRoundRect(tRectF, radii, Path.Direction.CCW);
+                Log.e("luy", "--->" + path.isEmpty());
+                outline.setConvexPath(path);
+
+//                outline.setRoundRect(0, 0, view.getMeasuredWidth(), view.getMeasuredHeight(), 1);
+
+
+
+//                Path path = new Path();
+//                path.moveTo(view.getWidth(), view.getHeight());
+//                path.lineTo(view.getWidth(), view.getHeight() * 2);
+//                path.lineTo(view.getWidth() * 2, view.getHeight() * 2);
+//                path.lineTo(view.getWidth() * 2, view.getHeight());
+//                path.close();
+//                outline.setConvexPath(path);
+            }
+        });
+        setClipToOutline(true);
     }
 
 
@@ -99,8 +138,12 @@ public class MyView extends View {
         Paint paint = new Paint();
         paint.setColor(Color.GREEN);
         //开始绘制
-        canvas.drawCircle(centerX, centerY, r, paint);
+//        canvas.drawCircle(centerX, centerY, r, paint);
 
+        RectF tRectF = new RectF();
+        tRectF.set(0, 0, getMeasuredWidth(), getMeasuredHeight());
+//        canvas.drawRoundRect(tRectF, RADIUS, RADIUS, paint);
+        canvas.drawRoundRect(tRectF, 0,0,paint);
         Log.e("luy", "MyView onDraw");
 
     }

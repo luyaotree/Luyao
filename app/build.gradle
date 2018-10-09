@@ -111,10 +111,10 @@ dependencies {
 //    compile project(':lib_module_aspectj')
     compile project(':lib_multidex')
     compile project(':lib_plugin')
-    compile project(':lib_view')
     compile project(':lib_constraintlayout')
     compile project(':lib_h5')
     compile project(':lib_aidl')
+    addComponent 'lib_view'
     addComponent 'lib_runalone'
     compile rootProject.ext.deps.androidAppcompat
     compile rootProject.ext.deps.recyclerview
