@@ -3,6 +3,7 @@ package com.luyao.base;
 import android.view.View;
 
 
+import com.douyu.app.user.lib_asynclayoutinflater.AsyncLayoutActivity;
 import com.edreamoon.router.FRouter;
 import com.luyao.constraintLayout.ConstraintLayoutActivity;
 import com.luyao.view.ViewActivity;
@@ -61,6 +62,13 @@ public class MainActivity extends RvActivity {
             public void onClick(View v) {
                 FRouter.instance().start("/RunAloneActivity");
 //                launch(com.luyao.webview.main.MainActivity.class, "H5多进程");
+            }
+        }));
+        data.add(new MenuModel("AsyncLayoutActivity", new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                launch(AsyncLayoutActivity.class, "ConstraintLayout");
             }
         }));
         return data;

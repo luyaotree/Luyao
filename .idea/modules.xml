@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/buildsrc/buildsrc.iml" filepath="$PROJECT_DIR$/buildsrc/buildsrc.iml" />
       <module fileurl="file://$PROJECT_DIR$/frouter/frouter.iml" filepath="$PROJECT_DIR$/frouter/frouter.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_aidl/lib_aidl.iml" filepath="$PROJECT_DIR$/lib_aidl/lib_aidl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_asynclayoutinflater/lib_asynclayoutinflater.iml" filepath="$PROJECT_DIR$/lib_asynclayoutinflater/lib_asynclayoutinflater.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" filepath="$PROJECT_DIR$/lib_constraintlayout/lib_constraintlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_design/lib_design.iml" filepath="$PROJECT_DIR$/lib_design/lib_design.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_h5/lib_h5.iml" filepath="$PROJECT_DIR$/lib_h5/lib_h5.iml" />

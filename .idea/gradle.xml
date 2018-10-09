@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/buildsrc" />
             <option value="$PROJECT_DIR$/frouter" />
             <option value="$PROJECT_DIR$/lib_aidl" />
+            <option value="$PROJECT_DIR$/lib_asynclayoutinflater" />
             <option value="$PROJECT_DIR$/lib_constraintlayout" />
             <option value="$PROJECT_DIR$/lib_design" />
             <option value="$PROJECT_DIR$/lib_h5" />

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.douyu.app.user.lib_asynclayoutinflater">
+
+    <application>
+        <activity android:name=".AsyncLayoutActivity"></activity>
+    </application>
+
+</manifest>
